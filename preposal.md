@@ -6,7 +6,7 @@ I will build a web application aimed at providing users with an easy way to navi
 
 ## If you plan to collaborate with one or two classmates, what are their names?
 
-By myself
+No I do not plan to collaborate.
 
 ## Do you have any questions of your own?
 
