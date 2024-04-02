@@ -1,2 +1,2 @@
 # final
-Final Project CIS1051 Spring24
+Final Project Spring24
