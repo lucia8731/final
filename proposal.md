@@ -23,17 +23,16 @@ Not applicable
 ## In the world of software, most everything takes longer to implement than you expect. And so it's not uncommon to accomplish less in a fixed amount of time than you hope.
 
 ### In a sentence (or list of features), define a GOOD outcome for your final project. I.e., what WILL you accomplish no matter what?
-
-TODO
+Build a simple web application with basic functions. Build a functions that enable users to find the shortest route.
 
 ### In a sentence (or list of features), define a BETTER outcome for your final project. I.e., what do you THINK you can accomplish before the final project's deadline?
 
-TODO
+By using frontend languages, build a web site which is appealing. Make every function work.
 
 ### In a sentence (or list of features), define a BEST outcome for your final project. I.e., what do you HOPE to accomplish before the final project's deadline?
 
-TODO
+Build a web site that provides users with train system in Tokyo and interactive feature of 'find the route,' Make it look a simple and beautiful web app that helps every tourist.
 
 ## In a paragraph or more, outline your next steps. What new skills will you need to acquire? What topics will you need to research? If working with one of two classmates, who will do what?
 
-TODO
+
