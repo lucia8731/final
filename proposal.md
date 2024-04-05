@@ -35,4 +35,8 @@ Build a web site that provides users with train system in Tokyo and interactive 
 
 ## In a paragraph or more, outline your next steps. What new skills will you need to acquire? What topics will you need to research? If working with one of two classmates, who will do what?
 
-
+- Set up a new directory for project and organize files.
+- Create HTML and CSS pages. Design the homepage and sidebar layout.
+- Develop route finder page with forms for selecting departure and arrival stations. Implement route search logic in Python backend.
+- Add JavaScript to handle user input, send requests to the server, and display results. Utilize Fetch API to communicate with the backend and update the UI dynamically.
+- Design Train Map page to display subway maps in Japanese and English. Store route data and load it dynamically using JavaScript.
