@@ -6,7 +6,7 @@ SIMPLY TOKYO
 
 ## In just a sentence or two, summarize your project. (E.g., "A website that lets you buy and sell stocks.")
 
-TODO
+It navigates Tokyo's complex subway system.
 
 ## In a paragraph or more, detail your project. What will your software do? What features will it have? How will it be executed?
 
