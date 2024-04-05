@@ -10,7 +10,7 @@ It finds the easiest route when users select their departure and arrival station
 
 ## In a paragraph or more, detail your project. What will your software do? What features will it have? How will it be executed?
 
-TODO
+The backend of the application will be built using Python with the Flask framework, while the frontend will utilize HTML, CSS, and JavaScript. Python will handle the logic for calculating routes between stations, while Flask will facilitate communication between the frontend and backend. HTML and CSS will be used for page structure and styling, while JavaScript will handle user interactions and dynamic content updates.
 
 ## If planning to combine 1051's final project with another course's final project, with which other course? And which aspect(s) of your proposed project would relate to 1051, and which aspect(s) would relate to the other course?
 
