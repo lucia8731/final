@@ -10,7 +10,7 @@ Hana Ueno
 
 #### Project title
 
-Simply Tokyo
+Tokyo Subway
 
 ***
 
