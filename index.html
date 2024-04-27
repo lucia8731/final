@@ -1,28 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tokyo Subway</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>税金計算</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Tokyo Subway</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="article.html">Star From Here</a></li>
-      <li><a href="train_map.html">How to get there?</a></li>
-      <li><a href="route_finder.html">Train Map</a></li>
-    </ul>
-  </nav>
-  <main>
-    <article>
-      <h2>Hello!</h2>
-      <p>Here you can find information about how to use the Tokyo subway system, including how to purchase tickets and more.</p>
-    </article>
-  </main>
-</body>
-</html>
+    <h1>税金計算</h1>
+    <form id="taxForm">
+        <label for="income">1. 収入(￥)：</label>
+        <input type="number" id="income" name="income" required>
+        <label for="income">経費などを引いてください</label><br><br>
+        <label>2. 扶養家族についてお聞きします。あなたと同一生計であり、年間の合計所得金額が48万円以下である家族の人数を年齢別に入力してください。年齢は、12月31日時点のものとしてください。(留学中の家族や障害のある方を含みます。)</label><br>
+        <label for="age16">16歳以上19歳未満：</label>
+        <input type="number" id="age16" name="age16" value="0" min="0">
+        <label for="age19">19歳以上23歳未満：</label>
+        <input type="number" id="age19" name="age19" value="0" min="0">
+        <label for="age23">23歳以上70歳未満：</label>
+        <input type="number" id="age23" name="age23" value="0" min="0">
+        <label for="age70">70歳以上(同居)：</label>
+        <input type="number" id="age70" name="age70" value="0" min="0">
+        <label for="age70-s">70歳以上(不同居)：</label>
+        <input type="number" id="age70-s" name="age70-s" value="0" min="0"><br><br>    
+        <label>3. 配属者についてお聞きします。配属者の方の所得が当てはまる範囲を選択してください。(所得とは収入から給与所得控除を引いた額です。)</label><br>
+        <input type="radio" id="sp48" name="sp48" value="sp48">
+        <label for="sp48">48万円以下</label>
+        <input type="radio" id="sp95" name="sp95" value="sp95">
+        <label for="sp95">48万円超95万円以下</label>
+        <input type="radio" id="sp100" name="sp100" value="sp100">
+        <label for="sp100">95万円超100万円以下</label>
+        <input type="radio" id="sp105" name="sp105" value="sp105">
+        <label for="sp105">100万円超105万円以下</label>
+        <input type="radio" id="sp110" name="sp110" value="sp110">
+        <label for="sp110">105万円超110万円以下</label>
+        <input type="radio" id="sp115" name="sp115" value="sp115">
+        <label for="sp115">110万円超115万円以下</label>
+        <input type="radio" id="sp120" name="sp120" value="sp120">
+        <label for="sp120">115万円超120万円以下</label>
+        <input type="radio" id="sp125" name="sp125" value="sp125">
+        <label for="sp125">120万円超125万円以下</label>
+        <input type="radio" id="sp130" name="sp130" value="sp130">
+        <label for="sp130">125万円超130万円以下</label>
+        <input type="radio" id="sp133" name="sp133" value="sp133">
+        <label for="sp133">130万円超133万円以下</label>
+        <input type="radio" id="spna" name="spna" value="spna">
+        <label for="spna">133万円超</label><br><br>
+        <label>4. あなたは特定の学校または大学に通っている学生ですか？大学院や専門学校も含みます。</label><br>
+        <input type="radio" id="student" name="student" value="student">
+        <label for="student">Yes, I am.</label>
+        <input type="radio" id="nonstudent" name="nonstudent" value="nonstudent">
+        <label for="nonstudent">No, I am not.</label><br><br>
+        <label>5.ひとり親世帯にあたりますか？(婚姻/再婚をしていない、または配偶者の生死が明らかでない)扶養家族は所得が48万円を超えていない16歳以上の者とする。</label><br>
+        <input type="radio" id="single" name="single" value="single">
+        <label for="single">Yes</label>
+        <input type="radio" id="nonsingle" name="nonsingle" value="nonsingle">
+        <label for="nonsingle">No</label><br><br>
+        <label>6. 5に当てはまらない方の中で、以下の条件に当てはまりますか？：離婚後に婚姻をしておらず、扶養親族がいる。夫と死別後に婚姻をしていない、または夫の生死が明らかでない。</label><br>
+        <input type="radio" id="widow" name="widow" value="widow">
+        <label for="widow">Yes</label>
+        <input type="radio" id="nonwidow" name="nonwidow" value="nonwidow">
+        <label for="nonwidow">No</label><br><br>
+        <labl>7. 障がいを持っている方、ご家族が障害を持っている方にお聞きします。</label><br>
+        <label for="disability">ご自身または配偶者、16歳未満を含む扶養家族が「障害者」にあたる(人)</label>
+        <input type="number" id="disability" name="disability" value="0"><br>
+        <label for="Sdisability">ご自身または配偶者、16歳未満を含む扶養家族が「特別障害者」にあたる(人)</label>
+        <input type="number" id="Sdisability" name="Sdisability" value="0"><br>
+        <label for="Sdisability">ご自身の配偶者または扶養家族が「特別障害者」にあたる(人)</label>
+        <input type="number" id="Sdisability" name="Sdisability" value="0"><br><br>
+        <label for="medical">8.医療費についてお聞きします。ご自身、配偶者、扶養親族の医療費の合計を入力してください。(￥)</label>
+        <input type="numbers" id="medical" name="medical" value="0" min="0"><br><br>
+        <label>9.生命保険についてお聞きします。以下に支払った保険料がある場合はその全てにチェックをつけてください。</label><br>
+        <input type="checkbox" id="life" name="life" value="life">
+        <label for=life>生命保険料</label>
+        <input type="checkbox" id="nurse" name="nurse" value="nurse">
+        <label for=nurse>介護医療保険料</label>
+        <input type="checkbox" id="pension" name="pension" value="pension">
+        <label for="pension">個人年金保険料</label><br><br>
+        <label for="social">10.社会保険料の合計 ((国民年金保険料/厚生年金保険料/雇用保険料/健康保険料/介護保険料/国民健康保険料/後期高齢者医療保険料/年金基金の保険料など) を入力してください。(￥)</label>
+        <input type="number" id="social" name="social" value="0" min="0"><br><br>
+      <label for="earth">11.支払った地震保険料があれば合計額を入力してください。</label>
+        <input type="number" id="earth" name="earth" value="0" min="0"><br><br><br>   
+        <input type="submit" value=計算Calculate>
+    </form>
+</body>body
