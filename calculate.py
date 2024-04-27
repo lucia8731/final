@@ -1,36 +1,27 @@
-from flask import Flask, render_template, redirect, url_for, request
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-# 計算結果を表示するページのルートURL
-@app.route('/result')
-def result():
-    # 仮の計算結果データ（本来はここで実際の計算処理を行う）
-    data = {
-        'totalTax': 50000,
-        'incomeTax': 30000,
-        'residentTax': 20000,
-        'incomeDeduction': 10000,
-        'taxDeduction': 5000
-    }
-    # HTMLテンプレートに計算結果データを渡してレンダリング
-    return render_template('result.html', data=data)
+# ホームページ
+@app.route('/', methods=['GET', 'POST'])
+def home():
+    total_tax = None  # 初期値としてNoneを設定
+    if request.method == 'POST':
+        # フォームから入力された情報を取得
+        income = int(request.form['income'])
+        dependents = int(request.form['dependents'])
 
-# フォームの入力を受け取るルートURL
-@app.route('/calculate', methods=['POST'])
-def calculate():
-    # フォームからのデータを取得（ここで計算を行う）
-    # 仮の計算結果を計算（本来はここで実際の計算処理を行う）
-    # 仮の計算結果データ
-    data = {
-        'totalTax': total_tax,
-        'incomeTax': income_tax,
-        'residentTax': resident_tax,
-        'incomeDeduction': income_deduction,
-        'taxDeduction': tax_deduction
-    }
-    # 計算結果を表示するページにリダイレクト
-    return redirect(url_for('result'))
+        # ここで計算を行う（仮の計算）
+        total_tax = calculate_tax(income, dependents)
+
+    # 計算結果を同じページに表示
+    return render_template('index.html', total_tax=total_tax)
+
+# 計算関数（仮の関数）
+def calculate_tax(income, dependents):
+    # 仮の計算
+    total_tax = income * 0.1 - dependents * 1000
+    return total_tax
 
 if __name__ == '__main__':
     app.run(debug=True)
