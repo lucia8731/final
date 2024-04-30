@@ -1,0 +1,558 @@
+<DOCTYPE! html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link rel="stylesheet" href="/Downloads/cis1051/Final/style.css">
+</head>
+<body>
+    <h1>The Functionality of This Web Tool</h1>
+    <div class="container3">
+        <div class="explanation">
+            <h2>How It Works?</h2>
+            <p class="ex">This is a simulator that calculates income tax and resident tax for a given year based on input such as annual income and number of dependents using Japan's system. <br>Calculating tax amounts is by no means straightforward. <br>To obtain accurate figures, precise calculations are necessary. <br>Let me explain the calculation method below.</p>
+          　<h2>Basic Calculation Formula</h2>
+            <p class="formula">Total Tax = Income Tax + Resident Tax</p>
+        </div>
+        <div class="calculation">
+            <h2>Income Tax Calculation Procedure</h2>
+            <div class="function">
+              <p>1. Calculate Annual Income<br>Income refers to the total amount of earnings for the year, including annual sales for self-employed individuals, and the total yearly salary for employees, part-time, or temporary workers, which may include bonuses.</p>
+              <p>2. Calculate Employment Income Deductions<br>This involves calculating the income deductions. First, calculate the employment income deduction, which is allocated equally to everyone. Since the calculation method varies depending on the income, please refer to the table below.</p>
+              <table>
+                <tr>
+                  <th>Income</th>
+                  <th>0-1.625M</th>
+                  <th>1.625M-1.8M</th>
+                  <th>1.8M-3.6M</th>
+                  <th>3.6M-6.6</th>
+                  <th>6.6M-8.5M</th>
+                  <th>8.5M~</th>
+                </tr>
+                <tr>
+                  <td>Formula</td>
+                  <td>550K</td>
+                  <td>Income×40% - 100K</td>
+                  <td>Income×30% + 80K</td>
+                  <td>Income×20% + 440K</td>
+                  <td>Income×10% + 1.1M</td>
+                  <td>1.95M</td>
+                </tr>
+              </table><br>
+              <p>3. Once you calculate employment income deduction, let's subtract it from the income to find the total income.<br>Total Income = Income - Employment Income Deduction</p>
+              <p>4. Calculate Income Deductions<br>Choose all deductions that apply to you from 11 types of deductions available, and calculate the total income deductions.</p>
+              <p>4-1. Basic Deduction</p>
+              <table>
+                <tr>
+                  <th>Total Income</th>
+                  <th>~24M</th>
+                  <th>24M-24.5M</th>
+                  <th>24.5M-25M</th>
+                  <th>25M~</th>
+                </tr>
+                <tr>
+                  <td>Deductions</td>
+                  <td>480K</td>
+                  <td>320K</td>
+                  <td>160K</td>
+                  <td>0</td>
+                </tr>
+              </table><br>
+              <p>4.2. Dependents Deduction<br>The deduction is applicable to non-spouse relatives with an income of less than 1.03 million yen.</p>
+              <table>
+                <tr>
+                  <th>Age</th>
+                  <th>16-18</th>
+                  <th>19-22</th>
+                  <th>23-70</th>
+                  <th>70~</th>
+                  <th>70~(apart)</th>
+                </tr>
+                <tr>
+                  <td>Deductions</td>
+                  <td>380K</td>
+                  <td>630K</td>
+                  <td>380K</td>
+                  <td>580K</td>
+                  <td>480K</td>
+                </tr>
+              </table>
+              <p>4.3 Spouse Deduction</p>
+              <table>
+                <tr>
+                  <th>Income</th>
+                  <th><=9M</th>
+                  <th><=9.5M</th>
+                  <th><=10M</th>
+                  <th>10M~</th>
+                </tr>
+                <tr>
+                  <td><=480K</td>
+                  <td>380K</td>
+                  <td>260K</td>
+                  <td>130K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><=950K</td>
+                  <td>380K</td>
+                  <td>280K</td>
+                  <td>130K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><=1M</td>
+                  <td>360K</td>
+                  <td>240K</td>
+                  <td>120K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><=1.05M</td>
+                  <td>310K</td>
+                  <td>210K</td>
+                  <td>110K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><=1.1M</td>
+                  <td>210K</td>
+                  <td>140K</td>
+                  <td>70K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><=1.15M</td>
+                  <td>210K</td>
+                  <td>140K</td>
+                  <td>70K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><=1.2M</td>
+                  <td>160K</td>
+                  <td>110K</td>
+                  <td>60K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><=1.25M</td>
+                  <td>110K</td>
+                  <td>80K</td>
+                  <td>40K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><=1.3M</td>
+                  <td>60K</td>
+                  <td>40K</td>
+                  <td>20K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><=1.33M</td>
+                  <td>30K</td>
+                  <td>20K</td>
+                  <td>10K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>1.33M~</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+              </table>
+              <p>4.4 Student Deduction<br>This is for students attending a school or university. This includes graduate and vocational schools. The total income must not exceed 750K.<br>Deduction: 270K</p>
+              <p>4.5 Deduction for single parents<br>Currently unmarried or not remarried, with children aged 16 or older and a total income not exceeding 480K yen. Common-law marriage is not applicable.<br>Deduction: 350K</p>
+              <p>4.6 Deduction for widow<br>A woman who, after divorce, has not remarried and has dependent relatives (parents, grandparents, grandchildren are also acceptable). Has not remarried after the death of her husband. Common-law marriage is not applicable.<br>Deduction: 270K</p>
+              <p>4.7 Deduction for people with disabilities. Multiply with the number of family members, including yourself, who fit the criteria.</p>
+              <p>4.7.1 Deduction for individuals or dependents under 16 who are "disabled": 270K per person.</p>
+              <p>4.7.2 Deduction for individuals or dependents under 16 who are "severely disabled": 400K per person.</p>
+              <p>4.7.3 Your spouse or dependent family member is a "severely disabled" individual, and you live with one of your relatives who share a household with you or your spouse: 750K</p>
+              <p>4.8 Medical Deduction<br>Input total medical expenses for yourself, your spouse, and dependent relatives. Do not include amounts reimbursed by insurance, etc.(Maximum Deduction: 200K)</p>
+              <table>
+                <tr>
+                  <th>Total Income</th>
+                  <th><=200K</th>
+                  <th>200K<</th>
+                </tr>
+                <tr>
+                  <td>Deductions</td>
+                  <td>Paid Medical Fee - 100K</td>
+                  <td>Total Income × 10%</td>
+                </tr>
+              </table>
+              <p>4.9 Life Insurance Deduction<br>Apply if you have paid premiums for the following insurance</p>
+              <p>4.9.1 Life Insurance Premiums</p>
+              <table>
+                <tr>
+                  <th>Total Amount Paid</th>
+                  <th>Deductions</th>
+                </tr>
+                <tr>
+                  <td><=20K</td>
+                  <td>Full Amount</td>
+                </tr>
+                <tr>
+                  <td><=40K</td>
+                  <td>Amount×1/2 + 10K</td>
+                </tr>
+                <tr>
+                  <td><=80K</td>
+                  <td>Amount×1/4 + 20K</td>
+                </tr>
+                <tr>
+                  <td>>80K</td>
+                  <td>40K</td>
+                </tr>
+              </table>
+              <p>4.9.2 Long-term Care Insurance Premiums</p>
+              <table>
+                <tr>
+                  <th>Total Amount Paid</th>
+                  <th>Deductions</th>
+                </tr>
+                <tr>
+                  <td><=20K</td>
+                  <td>Full Amount</td>
+                </tr>
+                <tr>
+                  <td><=40K</td>
+                  <td>Amount × 1/2 + 10K</td>
+                </tr>
+                <tr>
+                  <td><=80K</td>
+                  <td>Amount × 1/4 + 20K</td>
+                </tr>
+                <tr>
+                  <td>>80K</td>
+                  <td>40K</td>
+                </tr>
+              </table>
+              <p>4.9.3 Personal Pension Insurance Premiums</p>
+              <table>
+                <tr>
+                  <th>Total Amount Paid</th>
+                  <th>Deductions</th>
+                </tr>
+                <tr>
+                  <td><=25K</td>
+                  <td>Full Amount</td>
+                </tr>
+                <tr>
+                  <td><=50K</td>
+                  <td>Amount×1/2 + 12.5K</td>
+                </tr>
+                <tr>
+                  <td><=100K</td>
+                  <td>Amount×1/4 + 25K</td>
+                </tr>
+                <tr>
+                  <td>>100K</td>
+                  <td>50K</td>
+                </tr>
+              </table>
+              <p>4.10 Social Insurance Deduction<br>National Pension Insurance premiums / Employee's Pension Insurance premiums / Employment Insurance premiums / Health Insurance premiums / National Health Insurance premiums / Late-stage Elderly Medical Insurance premiums / Pension Fund premiums, etc.<br>Deductions: Full Amount Paid</p>
+              <p>4.11 Earthquake Insurance Premiums<br>Deductions: Full Amount Paid(Maximum Deduction: 50K)</p>
+              <p>5. Calculate Taxable Income<br>Taxable Income = Total Income - Total Income Deduction</p>
+              <p>6. Apply Tax Rate and Tax Deduction to Calculate Standard Income Tax<br>The tax rate and tax deduction varies depending on the taxable income.<br>Standard Income Tax = (Taxable Income × Tax Rate) - Tax Deduction</p>
+              <table>
+                <tr>
+                  <th>Taxable Income</th>
+                  <th><=1.95M</th>
+                  <th><=3.3M</th>
+                  <th><=6.95M</th>
+                  <th><=9M</th>
+                  <th><=18M</th>
+                  <th><=40M</th>
+                  <th>40M<</th>
+                </tr>
+                <tr>
+                  <td>Tax Rate</td>
+                  <td>5%</td>
+                  <td>10%</td>
+                  <td>20%</td>
+                  <td>23%</td>
+                  <td>33%</td>
+                  <td>40%</td>
+                  <td>45%</td>
+                </tr>
+                <tr>
+                  <td>Tax Deduction</td>
+                  <td>0</td>
+                  <td>97.5K</td>
+                  <td>427.5K</td>
+                  <td>636K</td>
+                  <td>1.536M</td>
+                  <td>2.796M</td>
+                  <td>4.796M</td>
+                </tr>
+              </table>
+              <p>7. Calculate Special Reconstruction Income Tax<br>Special Reconstruction Income Tax = Standard Income Tax × 2.1%</p>
+              <p>8. Finally Calculate Total Income Tax<br>Total Income Tax = Standard Income Tax + Special Reconstruction Income Tax<p>
+              
+              
+              
+              
+            
+            </div>
+        </div>
+        
+      
+        <div class="calculation">
+            <h2>Residence Tax Calculation Procedure</h2>
+            <div class="function">
+              <p>1. Calculate Annual Income<br>Income refers to the total amount of earnings for the year, including annual sales for self-employed individuals, and the total yearly salary for employees, part-time, or temporary workers, which may include bonuses.</p>
+              <p>2. Calculate Employment Income Deductions<br>This involves calculating the income deductions. First, calculate the employment income deduction, which is allocated equally to everyone. Since the calculation method varies depending on the income, please refer to the table below.</p>
+              <table>
+                <tr>
+                  <th>Income</th>
+                  <th>0-1.625M</th>
+                  <th>1.625M-1.8M</th>
+                  <th>1.8M-3.6M</th>
+                  <th>3.6M-6.6</th>
+                  <th>6.6M-8.5M</th>
+                  <th>8.5M~</th>
+                </tr>
+                <tr>
+                  <td>Formula</td>
+                  <td>550K</td>
+                  <td>Income × 40% - 100K</td>
+                  <td>Income × 30% + 80K</td>
+                  <td>Income × 20% + 440K</td>
+                  <td>Income × 10% + 1.1M</td>
+                  <td>1.95M</td>
+                </tr>
+              </table><br>
+              <p>3. Once you calculate employment income deduction, let's subtract it from the income to find the total income.<br>Total Income = Income - Employment Income Deduction</p>
+              <p>4. Calculate Income Deductions<br>Choose all deductions that apply to you from 11 types of deductions available, and calculate the total income deductions.</p>
+              <p>4-1. Basic Deduction</p>
+              <table>
+                <tr>
+                  <th>Total Income</th>
+                  <th>~24M</th>
+                  <th>24M-24.5M</th>
+                  <th>24.5M-25M</th>
+                  <th>25M~</th>
+                </tr>
+                <tr>
+                  <td>Deductions</td>
+                  <td>430K</td>
+                  <td>290K</td>
+                  <td>150K</td>
+                  <td>0</td>
+                </tr>
+              </table><br>
+              <p>4.2. Dependents Deduction<br>The deduction is applicable to non-spouse relatives with an income of less than 1.03 million yen.</p>
+              <table>
+                <tr>
+                  <th>Age</th>
+                  <th>16-18</th>
+                  <th>19-22</th>
+                  <th>23-70</th>
+                  <th>70~</th>
+                  <th>70~(apart)</th>
+                </tr>
+                <tr>
+                  <td>Deductions</td>
+                  <td>330K</td>
+                  <td>450K</td>
+                  <td>330K</td>
+                  <td>450K</td>
+                  <td>380K</td>
+                </tr>
+              </table>
+              <p>4.3 Spouse Deduction</p>
+              <table>
+                <tr>
+                  <th>Income</th>
+                  <th><=9M</th>
+                  <th><=9.5M</th>
+                  <th><=10M</th>
+                  <th>10M~</th>
+                </tr>
+                <tr>
+                  <td><=480K</td>
+                  <td>330K</td>
+                  <td>220K</td>
+                  <td>110K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><=950K</td>
+                  <td>330K</td>
+                  <td>220K</td>
+                  <td>110K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><=1M</td>
+                  <td>330K</td>
+                  <td>220K</td>
+                  <td>110K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><=1.05M</td>
+                  <td>310K</td>
+                  <td>210K</td>
+                  <td>110K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><=1.1M</td>
+                  <td>260K</td>
+                  <td>180K</td>
+                  <td>90K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><=1.15M</td>
+                  <td>210K</td>
+                  <td>140K</td>
+                  <td>70K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><=1.2M</td>
+                  <td>160K</td>
+                  <td>110K</td>
+                  <td>60K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><=1.25M</td>
+                  <td>110K</td>
+                  <td>80K</td>
+                  <td>40K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><=1.3M</td>
+                  <td>60K</td>
+                  <td>40K</td>
+                  <td>20K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><=1.33M</td>
+                  <td>30K</td>
+                  <td>20K</td>
+                  <td>10K</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>1.33M~</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+              </table>
+              <p>4.4 Student Deduction<br>This is for students attending a school or university. This includes graduate and vocational schools. The total income must not exceed 750K.<br>Deduction: 260K</p>
+              <p>4.5 Deduction for single parents<br>Currently unmarried or not remarried, with children aged 16 or older and a total income not exceeding 480K yen. Common-law marriage is not applicable.<br>Deduction: 300K</p>
+              <p>4.6 Deduction for widow<br>A woman who, after divorce, has not remarried and has dependent relatives (parents, grandparents, grandchildren are also acceptable). Has not remarried after the death of her husband. Common-law marriage is not applicable.<br>Deduction: 260K</p>
+              <p>4.7 Deduction for people with disabilities. Multiply with the number of family members, including yourself, who fit the criteria.</p>
+              <p>4.7.1 Deduction for individuals or dependents under 16 who are "disabled": 260K per person.</p>
+              <p>4.7.2 Deduction for individuals or dependents under 16 who are "severely disabled": 300K per person.</p>
+              <p>4.7.3 Your spouse or dependent family member is a "severely disabled" individual, and you live with one of your relatives who share a household with you or your spouse: 530K</p>
+              <p>4.8 Medical Deduction<br>Input total medical expenses for yourself, your spouse, and dependent relatives. Do not include amounts reimbursed by insurance, etc.(Maximum Deduction: 200K)</p>
+              <table>
+                <tr>
+                  <th>Total Income</th>
+                  <th><=200K</th>
+                  <th>200K<</th>
+                </tr>
+                <tr>
+                  <td>Deductions</td>
+                  <td>Paid Medical Fee - 100K</td>
+                  <td>Total Income × 10%</td>
+                </tr>
+              </table>
+              <p>4.9 Life Insurance Deduction<br>Apply if you have paid premiums for the following insurance</p>
+              <p>4.9.1 Life Insurance Premiums</p>
+              <table>
+                <tr>
+                  <th>Total Amount Paid</th>
+                  <th>Deductions</th>
+                </tr>
+                <tr>
+                  <td><=12K</td>
+                  <td>Full Amount</td>
+                </tr>
+                <tr>
+                  <td><=32K</td>
+                  <td>Amount×1/2 + 6K</td>
+                </tr>
+                <tr>
+                  <td><=56K</td>
+                  <td>Amount×1/4 + 14K</td>
+                </tr>
+                <tr>
+                  <td>>56K</td>
+                  <td>40K</td>
+                </tr>
+              </table>
+              <p>4.9.2 Long-term Care Insurance Premiums</p>
+              <table>
+                <tr>
+                  <th>Total Amount Paid</th>
+                  <th>Deductions</th>
+                </tr>
+                <tr>
+                  <td><=12K</td>
+                  <td>Full Amount</td>
+                </tr>
+                <tr>
+                  <td><=32K</td>
+                  <td>Amount×1/2 + 6K</td>
+                </tr>
+                <tr>
+                  <td><=56K</td>
+                  <td>Amount×1/4 + 14K</td>
+                </tr>
+                <tr>
+                  <td>>56K</td>
+                  <td>28K</td>
+                </tr>
+              </table>
+              <p>4.9.3 Personal Pension Insurance Premiums</p>
+              <table>
+                <tr>
+                  <th>Total Amount Paid</th>
+                  <th>Deductions</th>
+                </tr>
+                <tr>
+                  <td><=12K</td>
+                  <td>Full Amount</td>
+                </tr>
+                <tr>
+                  <td><=32K</td>
+                  <td>Amount × 1/2 + 6K</td>
+                </tr>
+                <tr>
+                  <td><=56K</td>
+                  <td>Amount × 1/4 + 14K</td>
+                </tr>
+                <tr>
+                  <td>>56K</td>
+                  <td>28K</td>
+                </tr>
+              </table>
+              <p>4.10 Social Insurance Deduction<br>National Pension Insurance premiums / Employee's Pension Insurance premiums / Employment Insurance premiums / Health Insurance premiums / National Health Insurance premiums / Late-stage Elderly Medical Insurance premiums / Pension Fund premiums, etc.<br>Deductions: Full Amount Paid</p>
+              <p>4.11 Earthquake Insurance Premiums<br>Deductions: Full Amount Paid × 1/2 (Maximum Deduction: 25K)</p>
+              <p>5. Calculate Taxable Income<br>Taxable Income = Total Income - Total Income Deduction</p>
+              
+              <p>6. Finally Calculate Total Resident Tax<br>Total Resident Tax = Taxable Income × 10% + 5K<p>
+           
+            </div>
+        </div>
+      
+      
+      
+    </div> 
+</body>
+</html>
