@@ -1,0 +1,126 @@
+body {
+  font-family: Arial;
+}
+header {
+  text-align: center;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.nav-link{
+  font-size: 20px;
+  color: #F2826D;
+  font-family: sans-serif;
+  text-decoration-line: none;
+  font-weight: 670;
+  padding: 10px 20px;
+  flex-grow: 0;
+}
+
+.nav-link:nth-child(2) {
+  margin: 0;
+}
+
+.container {
+    display: flex;
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 30px;
+}
+
+
+body {
+    font-family: Arial;
+  }
+
+h1{
+    font-size:40px;
+    color:#06f;
+    text-align: center;
+}
+  
+.container2{
+  align-items: 50%;
+  width: 50%;
+  margin: auto;
+}
+    
+.result{
+    text-align: center;
+    margin-top: 30px; 
+    margin-bottom: 60px;
+    font-size: 40px;
+    color:#06f;
+}
+    
+.taxes{
+    text-align: center;
+}
+    
+.input{
+    margin-top:60px;
+    text-align:center;
+}
+  
+h3{
+    font-size: 25px;
+    color: #C2567E;
+}
+    
+.amount{
+    font-size: 30px;
+}
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .explanation {
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+  }
+  .calculation {
+    width: 45%;
+    height: 2500px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 30px;
+    margin-top: 30px;
+  }
+
+  h2{
+    font-size: 24px;
+    text-align:center;
+    color: #C2567E;
+  }
+  
+  .ex{
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .formula{
+    font-size: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    text-align:center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
