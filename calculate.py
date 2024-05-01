@@ -66,6 +66,9 @@ def results():
     resident_tax = request.args.get('resident_tax')
     return render_template('results.html', total_tax=total_tax, income_tax=income_tax, resident_tax=resident_tax)
 
+@app.route('/article.html')
+def article():
+    return render_template('article.html')
 
 def calculate_total_income(income):
     if income <= 1625000:
