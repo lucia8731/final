@@ -59,14 +59,11 @@ label{
   text-align: center;
 }
 
-#life, #nurse, #pension{
-  
-}
-
 input[type="number"]{
   vertical-align: 1px;
   margin: 0 10px 0 8px;
   width: 40px;
+  height: 15px;
   border: 1px solid #F2826D;
   border-radius: 3px;
   font-family: Gill Sans;
@@ -116,9 +113,11 @@ input[type="radio"]:checked:before {
   background-color: #FEAC7E;
   border: none;
   font-size: 20px;
-  border-radius: 20px;
+  border-radius: 15px;
   color: white;
   margin: 20px 25%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
   
 .container2{
