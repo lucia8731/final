@@ -44,13 +44,17 @@ h1{
 }
 
 label{
-  font-size: 14px;
+  font-size: 18px;
   color: #F2826D;
   line-height: 1.8;
 }
 
-#nosp, #sp105, #sp125, #spUnder70, #student, #single, #widow, #welfare{
+#nosp, #sp115, #spUnder70, #student, #single, #widow, #welfare{
   margin-left: 13px;
+}
+
+.sp{
+  font-size: 15px;
 }
 
 #age1619, #age1923, #age2370, #age70Co, #age70, #disability, #Sdisability, #SdisabilityCo{
