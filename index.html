@@ -19,89 +19,53 @@
     <div class="container">
         <div class="form-section">
             <form id="taxForm" action="/" method="POST">
-                <label for="income">1. Paid Salary(￥)：</label>
-                <input type="number" id="income" name="income" value="0" min="0" required><br><br>
+                <label>1. Paid Salary(yen)：<input type="number" id="income" name="income" value="0" min="0" required><br><br></label>
                 <label>2. Please input the number of family members by age who are part of the same household and whose total annual income is 480,000 yen or less. Please input the age as of December 31st. (Includes family members studying abroad or with disabilities.)</label><br>
-                <label for="age1619">16-18 yrs：</label>
-                <input type="number" id="age1619" name="age1619" value="0" min="0">
-                <label for="age1923">19-22 yrs：</label>
-                <input type="number" id="age1923" name="age1923" value="0" min="0">
-                <label for="age2370">23-69 yrs：</label>
-                <input type="number" id="age2370" name="age2370" value="0" min="0"><br>
-                <label for="age70Co">70+ yrs(same household)：</label>
-                <input type="number" id="age70Co" name="age70Co" value="0" min="0">
-                <label for="age70">70+ yrs(separately living)：</label>
-                <input type="number" id="age70" name="age70" value="0" min="0"><br><br>
+                <label>16-18 yrs：<input type="number" id="age1619" name="age1619" value="0" min="0"></label>
+                <label>19-22 yrs：<input type="number" id="age1923" name="age1923" value="0" min="0"></label>
+                <label>23-69 yrs：<input type="number" id="age2370" name="age2370" value="0" min="0"><br></label>
+                <label>70+ yrs(same household)：<input type="number" id="age70Co" name="age70Co" value="0" min="0"></label>
+                <label>70+ yrs(separately living)：<input type="number" id="age70" name="age70" value="0" min="0"></label><br><br>
                 <label>3-1.Please select the applicable income range for the spouse.</label><br>
-                <input type="radio" id="nosp" name="sp" value="nosp">
-                <label for="nosp">No spouse</label>
-                <input type="radio" id="sp48" name="sp" value="sp48">
-                <label for="sp48">less than 480K yen</label>
-                <input type="radio" id="sp95" name="sp" value="sp95">
-                <label for="sp95">480K-949K yen</label>
-                <input type="radio" id="sp100" name="sp" value="sp100">
-                <label for="sp100">950K-999K yen</label>
-                <input type="radio" id="sp105" name="sp" value="sp105">
-                <label for="sp105">1M-1.05M yen</label>
-                <input type="radio" id="sp110" name="sp" value="sp110">
-                <label for="sp110">1.05M-1.1M yen</label><br>
-                <input type="radio" id="sp115" name="sp" value="sp115">
-                <label for="sp115">1.1M-1.14M yen</label>
-                <input type="radio" id="sp120" name="sp" value="sp120">
-                <label for="sp120">1.15M-1.19M yen</label>
-                <input type="radio" id="sp125" name="sp" value="sp125">
-                <label for="sp125">1.2M-1.24M yen</label>
-                <input type="radio" id="sp130" name="sp" value="sp130">
-                <label for="sp130">1.25M-1.29M yen</label>
-                <input type="radio" id="sp133" name="sp" value="sp133">
-                <label for="sp133">1.3M-1.32M yen</label>
-                <input type="radio" id="spna" name="sp" value="spna">
-                <label for="spna">1.33+ yen</label><br>
-                <label>3-2. Please select the age of the spouse</label><br>
-                <input type="radio" id="spUnder70" name="sp70" value="spUnder70">
-                <label for="spUnder70">Under 70 yrs</label>
-                <input type="radio" id="sp70Plus" name="sp70" value="sp70Plus">
-                <label for="sp70Plus">70 yrs and Above</label><br><br>
+                
+                <label><input type="radio" id="nosp" name="sp" value="nosp">No spouse</label>
+                <label><input type="radio" id="sp48" name="sp" value="sp48">less than 480K yen</label>
+                <label><input type="radio" id="sp95" name="sp" value="sp95">480K-949K yen</label>
+                <label><input type="radio" id="sp100" name="sp" value="sp100">950K-999K yen</label>
+                <label><input type="radio" id="sp105" name="sp" value="sp105">1M-1.05M yen</label>
+                <label><input type="radio" id="sp110" name="sp" value="sp110">1.05M-1.1M yen</label>
+                <label><input type="radio" id="sp115" name="sp" value="sp115">1.1M-1.14M yen</label>
+                <label><input type="radio" id="sp120" name="sp" value="sp120">1.15M-1.19M yen</label>
+                <label><input type="radio" id="sp125" name="sp" value="sp125">1.2M-1.24M yen</label>
+                <label><input type="radio" id="sp130" name="sp" value="sp130">1.25M-1.29M yen</label>
+                <label><input type="radio" id="sp133" name="sp" value="sp133">1.3M-1.32M yen</label>
+                <label><input type="radio" id="spna" name="sp" value="spna">1.33+ yen</label><br>
+                <label>3-2. Please select the age of the spouse.</label><br>
+                <label><input type="radio" id="spUnder70" name="sp70" value="spUnder70">Under 70 yrs</label>
+                <label><input type="radio" id="sp70Plus" name="sp70" value="sp70Plus">70 yrs and Above</label><br><br>
                 <label>4. Are you a student attending a school or university? This includes graduate and vocational schools.</label><br>
-                <input type="radio" id="student" name="student" value="student">
-                <label for="student">Yes, I am.</label>
-                <input type="radio" id="nonstudent" name="student" value="nonstudent">
-                <label for="nonstudent">No, I am not.</label><br><br>
+                <label><input type="radio" id="student" name="student" value="student">Yes, I am.</label>
+                <label><input type="radio" id="nonstudent" name="student" value="nonstudent">No, I am not.</label><br><br>
                 <label>5.Are you a single-parent household? Currently unmarried or not remarried, with children aged 16 or older and a total income not exceeding 480K yen. Common-law marriage is not applicable.</label><br>
-                <input type="radio" id="single" name="single" value="single">
-                <label for="single">Yes</label>
-                <input type="radio" id="nonsingle" name="single" value="nonsingle">
-                <label for="nonsingle">No</label><br><br>
+                <label><input type="radio" id="single" name="single" value="single">Yes</label>
+                <label><input type="radio" id="nonsingle" name="single" value="nonsingle">No</label><br><br>
                 <label>6. Do you meet the following conditions?:  A woman who, after divorce, has not remarried and has dependent relatives (parents, grandparents, grandchildren are also acceptable). Has not remarried after the death of her husband. Common-law marriage is not applicable.</label><br>
-                <input type="radio" id="widow" name="widow" value="widow">
-                <label for="widow">Yes</label>
-                <input type="radio" id="nonwidow" name="widow" value="nonwidow">
-                <label for="nonwidow">No</label><br><br>
-                <labl>7. Please provide the number of family members, including yourself, who fit the criteria.</label><br>
-                <label for="disability">Individuals or dependents under 16 who are "disabled"</label>
-                <input type="number" id="disability" name="disability" value="0"><br>
-                <label for="Sdisability">Individuals or dependents under 16 who are "severely disabled"</label>
-                <input type="number" id="Sdisability" name="Sdisability" value="0"><br>
-                <label for="SdisabilityCo">Your spouse or dependent family member is a "severely disabled" individual, and you live with one of your relatives who share a household with you or your spouse.</label>
-                <input type="number" id="SdisabilityCo" name="SdisabilityCo" value="0"><br><br>
+                <label><input type="radio" id="widow" name="widow" value="widow">Yes</label>
+                <label><input type="radio" id="nonwidow" name="widow" value="nonwidow">No</label><br><br>
+                <label>7. Please provide the number of family members, including yourself, who fit the criteria.</label><br>
+                <label>Individuals or dependents under 16 who are "disabled"<input type="number" id="disability" name="disability" value="0"></label><br>
+                <label>Individuals or dependents under 16 who are "severely disabled"<input type="number" id="Sdisability" name="Sdisability" value="0"></label><br>
+                <label>Your spouse or dependent family member is a "severely disabled" individual, and you live with one of your relatives who share a household with you or your spouse.<input type="number" id="SdisabilityCo" name="SdisabilityCo" value="0"></label><br><br>
                 <label>8. Currently receiving livelihood assistance under the Welfare Law.</label><br>
-                <input type="radio" id="welfare" name="welfare" value="welfare">
-                <label for = "welfare">Yes I am.</label>
-                <input type="radio" id="nonwelfare" name="welfare" value="nonwelfare">
-                <label for = "nonwelfare">No I'm not.</label><br><br>
-                <label for="medical">9. Please input the total medical expenses for yourself, your spouse, and dependent relatives. Do not include amounts reimbursed by insurance, etc.</label><br>
-                <input type="number" id="medical" name="medical" value="0" min="0"><br><br>
+                <label><input type="radio" id="welfare" name="welfare" value="welfare">Yes I am.</label>
+                <label><input type="radio" id="nonwelfare" name="welfare" value="nonwelfare">No I'm not.</label><br><br>
+                <label>9. Please input the total medical expenses for yourself, your spouse, and dependent relatives. Do not include amounts reimbursed by insurance, etc.<input type="number" id="medical" name="medical" value="0" min="0"</label><br><br>
                 <label>10. If you have paid premiums for the following insurance, please input the total payment for each.</label><br>
-                <label for=life>Life insurance premiums</label>
-                <input type="number" id="life" name="life" value="0">
-                <label for=nurse>Long-term care insurance premiums</label>
-                <input type="number" id="nurse" name="nurse" value="0">
-                <label for="pension">Personal pension insurance premiums</label>
-                <input type="number" id="pension" name="pension" value="0"><br><br>
-                <label for="social">11. Please input the total amount of social insurance premiums (National Pension Insurance premiums / Employee's Pension Insurance premiums / Employment Insurance premiums / Health Insurance premiums / Long-term Care Insurance premiums / National Health Insurance premiums / Late-stage Elderly Medical Insurance premiums / Pension Fund premiums, etc.).</label>
-                <input type="number" id="social" name="social" value="0" min="0"><br><br>
-                <label for="earth">12. If you have paid earthquake insurance premiums, please input the total amount.</label>
-                <input type="number" id="earth" name="earth" value="0" min="0"><br><br><br>   
+                <label>Life insurance premiums<input type="number" id="life" name="life" value="0"></label><br>
+                <label>Long-term care insurance premiums<input type="number" id="nurse" name="nurse" value="0"></label><br>
+                <label>Personal pension insurance premiums<input type="number" id="pension" name="pension" value="0"></label><br><br>
+                <label>11. Please input the total amount of social insurance premiums (National Pension Insurance premiums / Employee's Pension Insurance premiums / Employment Insurance premiums / Health Insurance premiums / Long-term Care Insurance premiums / National Health Insurance premiums / Late-stage Elderly Medical Insurance premiums / Pension Fund premiums, etc.).<input type="number" id="social" name="social" value="0" min="0"></label><br><br>
+                <label>12. If you have paid earthquake insurance premiums, please input the total amount.<input type="number" id="earth" name="earth" value="0" min="0"></label><br><br><br>   
                 <input type="submit" value=Calculate id="calculate">
             </form>
       </div>
