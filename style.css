@@ -16,7 +16,7 @@ header {
   font-size: 20px;
   color: #F2826D;
   font-family: sans-serif;
-  text-decoration-line: none;
+  text-decoration-: none;
   font-weight: 670;
   padding: 10px 20px;
   flex-grow: 0;
@@ -29,7 +29,7 @@ header {
 .container {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: 60%;
     margin: 30px auto;
     padding: 35px 30px;
     border: 3px solid #FEAC7E; 
@@ -46,7 +46,7 @@ h1{
 label{
   font-size: 14px;
   color: #F2826D;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 #nosp, #sp105, #sp125, #spUnder70, #student, #single, #widow, #welfare{
