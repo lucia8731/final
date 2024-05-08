@@ -19,12 +19,12 @@
     <div class="container">
         <div class="form-section">
             <form id="taxForm" action="/" method="POST">
-                <label>1. Paid Salary(yen):<input type="number" id="income" name="income" value="0" min="0" required><br><br></label>
+                <label>1. Paid Salary:<input type="number" id="income" name="income" value="0" min="0" required>(yen)<br><br></label>
                 <label>2. Please input the number of family members by age who are part of the same household and whose total annual income is 480,000 yen or less. Please input the age as of December 31st. (Includes family members studying abroad or with disabilities.)</label><br>
-                <label>16-18 yrs:<input type="number" id="age1619" name="age1619" value="0" min="0"></label>
+                <label for="age1619" style="position: relative; padding-left: 10px;">16-18 yrs:<input type="number" id="age1619" name="age1619" value="0" min="0"></label>
                 <label>19-22 yrs:<input type="number" id="age1923" name="age1923" value="0" min="0"></label>
                 <label>23-69 yrs:<input type="number" id="age2370" name="age2370" value="0" min="0"><br></label>
-                <label>70+ yrs(same household):<input type="number" id="age70Co" name="age70Co" value="0" min="0"></label>
+                <label for="age70C" style="position: relative; padding-left: 10px;">70+ yrs(same household):<input type="number" id="age70Co" name="age70Co" value="0" min="0"></label>
                 <label>70+ yrs(separately living):<input type="number" id="age70" name="age70" value="0" min="0"></label><br><br>
                 <label>3-1. Please select the applicable income range for the spouse.</label><br>
                 <label><input type="radio" id="nosp" name="sp" value="nosp">No spouse</label>
@@ -52,17 +52,17 @@
                 <label><input type="radio" id="widow" name="widow" value="widow">Yes</label>
                 <label><input type="radio" id="nonwidow" name="widow" value="nonwidow">No</label><br><br>
                 <label>7. Please provide the number of family members, including yourself, who fit the criteria.</label><br>
-                <label>Individuals or dependents under 16 who are "disabled"<input type="number" id="disability" name="disability" value="0"></label><br>
-                <label>Individuals or dependents under 16 who are "severely disabled"<input type="number" id="Sdisability" name="Sdisability" value="0"></label><br>
-                <label>Your spouse or dependent family member is a "severely disabled" individual, and you live with one of your relatives who share a household with you or your spouse.<input type="number" id="SdisabilityCo" name="SdisabilityCo" value="0"></label><br><br>
+                <label for="disability" style="position: relative; padding-left: 10px;">Individuals or dependents under 16 who are "disabled"<input type="number" id="disability" name="disability" value="0"></label><br>
+                <label for="Sdisability" style="position: relative; padding-left: 10px;">Individuals or dependents under 16 who are "severely disabled"<input type="number" id="Sdisability" name="Sdisability" value="0"></label><br>
+                <label for="SdisabilityCo" style="position: relative; padding-left: 10px;">Your spouse or dependent family member is a "severely disabled" individual<input type="number" id="SdisabilityCo" name="SdisabilityCo" value="0"></label><br><br>
                 <label>8. Currently receiving livelihood assistance under the Welfare Law.</label><br>
                 <label><input type="radio" id="welfare" name="welfare" value="welfare">Yes</label>
                 <label><input type="radio" id="nonwelfare" name="welfare" value="nonwelfare">No</label><br><br>
                 <label>9. Please input the total medical expenses for yourself, your spouse, and dependent relatives. Do not include amounts reimbursed by insurance, etc.<input type="number" id="medical" name="medical" value="0" min="0"</label><br><br>
                 <label>10. If you have paid premiums for the following insurance, please input the total payment for each.</label><br>
-                <label>Life insurance premiums<input type="number" id="life" name="life" value="0"></label><br>
-                <label>Long-term care insurance premiums<input type="number" id="nurse" name="nurse" value="0"></label><br>
-                <label>Personal pension insurance premiums<input type="number" id="pension" name="pension" value="0"></label><br><br>
+                <label for="life" style="position: relative; padding-left: 10px;">Life insurance premiums<input type="number" id="life" name="life" value="0"></label><br>
+                <label for="nurse" style="position: relative; padding-left: 10px;">Long-term care insurance premiums<input type="number" id="nurse" name="nurse" value="0"></label><br>
+                <label for="pension" style="position: relative; padding-left: 10px;">Personal pension insurance premiums<input type="number" id="pension" name="pension" value="0"></label><br><br>
                 <label>11. Please input the total amount of social insurance premiums (National Pension Insurance premiums / Employee's Pension Insurance premiums / Employment Insurance premiums / Health Insurance premiums / Long-term Care Insurance premiums / National Health Insurance premiums / Late-stage Elderly Medical Insurance premiums, etc.).<input type="number" id="social" name="social" value="0" min="0"></label><br><br>
                 <label>12. If you have paid earthquake insurance premiums, please input the total amount.<input type="number" id="earth" name="earth" value="0" min="0"></label><br><br><br>   
                 <input type="submit" value=Calculate id="calculate">
