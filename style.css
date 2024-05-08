@@ -1,5 +1,6 @@
 body {
   font-family: Arial;
+  background-color: #FFFDF3;
 }
 header {
   text-align: center;
@@ -42,6 +43,72 @@ h1{
     text-align: center;
 }
 
+label{
+  font-size: 14px;
+  color: #F2826D;
+  line-height: 1.5;
+}
+
+#nosp, #sp105, #sp125, #spUnder70, #student, #single, #widow, #welfare{
+  margin-left: 13px;
+}
+
+#age1619, #age1923, #age2370, #age70Co, #age70, #disability, #Sdisability, #SdisabilityCo{
+  width: 10px;
+  margin: 0 10px 0 8px;
+  text-align: center;
+}
+
+#life, #nurse, #pension{
+  
+}
+
+input[type="number"]{
+  vertical-align: 1px;
+  margin: 0 10px 0 8px;
+  width: 40px;
+  border: 1px solid #F2826D;
+  border-radius: 3px;
+  font-family: Gill Sans;
+  font-weight: 600;
+  text-align: right;
+  background-color: #F3F3F3
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="radio"] {
+  position: relative;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #F2826D;
+  border-radius: 50%;
+  background-color: #F2826D;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #FAB6B6;
+  content: '';
+}
 
 #calculate{
   width: 50%;
