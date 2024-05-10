@@ -36,7 +36,6 @@ header {
     border-radius: 20px;
 }
 
-
 h1{
     font-size:40px;
     color: #2B2498;
@@ -58,7 +57,7 @@ label{
 }
 
 #age1619, #age1923, #age2370, #age70Co, #age70, #disability, #Sdisability, #SdisabilityCo{
-  width: 10px;
+  width: 15px;
   margin: 0 10px 0 8px;
   text-align: center;
 }
@@ -67,11 +66,12 @@ input[type="number"]{
   vertical-align: 1px;
   margin: 0 10px 0 8px;
   width: 40px;
-  height: 15px;
+  height: 18px;
   border: 1px solid #F2826D;
   border-radius: 3px;
   font-family: Gill Sans;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 14px;
   text-align: right;
   background-color: #F3F3F3
 }
@@ -90,8 +90,8 @@ input[type="radio"] {
 
 input[type="radio"] {
   position: relative;
-  width: 11px;
-  height: 11px;
+  width: 13px;
+  height: 13px;
   border: 1px solid #F2826D;
   border-radius: 50%;
   background-color: #F2826D;
@@ -104,10 +104,10 @@ input[type="radio"]:checked:before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 7px;
-  height: 7px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
-  background: #FAB6B6;
+  background: #93331A;
   content: '';
 }
 
