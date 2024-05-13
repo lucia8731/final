@@ -36,6 +36,7 @@ header {
     border-radius: 20px;
 }
 
+
 h1{
     font-size:40px;
     color: #2B2498;
@@ -56,11 +57,13 @@ label{
   font-size: 15px;
 }
 
+
 #age1619, #age1923, #age2370, #age70Co, #age70, #disability, #Sdisability, #SdisabilityCo{
   width: 15px;
   margin: 0 10px 0 8px;
   text-align: center;
 }
+
 
 input[type="number"]{
   vertical-align: 1px;
@@ -90,8 +93,8 @@ input[type="radio"] {
 
 input[type="radio"] {
   position: relative;
-  width: 13px;
-  height: 13px;
+  width: 11px;
+  height: 11px;
   border: 1px solid #F2826D;
   border-radius: 50%;
   background-color: #F2826D;
@@ -104,10 +107,10 @@ input[type="radio"]:checked:before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 9px;
-  height: 9px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
-  background: #93331A;
+  background: #FAB6B6;
   content: '';
 }
 
@@ -157,51 +160,51 @@ h3{
 }
 
 .container3 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  .explanation {
-    width: 50%;
-    margin-left: 25%;
-    text-align: center;
-  }
-  .calculation {
-    width: 45%;
-    height: 2500px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 30px;
-    margin-top: 30px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+.explanation {
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+}
+.calculation {
+  width: 45%;
+  height: 100%;
+  border: 2px solid #FEAC7E;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 30px 20px 20px 20px;
+}
 
-  h2{
-    font-size: 24px;
-    text-align:center;
-    color: #C2567E;
-  }
-  
-  .ex{
-    font-size: 20px;
-    line-height: 30px;
-  }
-  
-  .formula{
-    font-size: 20px;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-    text-align:center;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-  }
+h2{
+  font-size: 24px;
+  text-align:center;
+  color: #C2567E;
+}
+
+.ex{
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.formula{
+  font-size: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  text-align:center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
