@@ -7,13 +7,22 @@
     <link rel="stylesheet" href="/Downloads/cis1051/Final/style.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+              <a class="nav-link" href="index.html">Tax Amount Estimator</a>
+              <a class="nav-link" href="article.html">Discover Tax Calculation Flow!</a>
+              <a class="nav-link">About</a>
+        </nav>
+        <h1>Total Tax Amount: {{  total_tax  }} JPY</h1>
+    </header>
+    <body>
     <div class = "container2">
-        <h1 class="result">Total Tax Amount: {{  total_tax  }} JPY</h1>
         <div class="taxes">
           <h3>Breakdown</h3>
           <p class="amount">Income Tax Amount: {{  income_tax  }} JPY</p>
           <p class="amount">Resident Tax Amount: {{  resident_tax  }} JPY</p>
         </div>
     </div>
+</body>
 </body>
 </html>
