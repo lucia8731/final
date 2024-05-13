@@ -70,6 +70,10 @@ def results():
 def article():
     return render_template('article.html')
 
+@app.route('/index.html')
+def article():
+    return render_template('index.html')
+
 def calculate_total_income(income):
     if income <= 1625000:
         total_income = income - 550000
