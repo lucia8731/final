@@ -71,7 +71,7 @@ def article():
     return render_template('article.html')
 
 @app.route('/index.html')
-def article():
+def index():
     return render_template('index.html')
 
 def calculate_total_income(income):
