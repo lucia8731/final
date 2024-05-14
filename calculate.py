@@ -554,9 +554,9 @@ def calculate_total_tax(income, income_tax, resident_tax):
         total_tax = income_tax + resident_tax
 
     return {
-        'total_tax': total_tax,
-        'income_tax': income_tax,
-        'resident_tax': resident_tax,
+        'total_tax': "{:,.0f}".format(total_tax),
+        'income_tax': "{:,0f}".format(income_tax),
+        'resident_tax': "{:,.0f}".format(resident_tax),
     }
 
 if __name__ == '__main__':
